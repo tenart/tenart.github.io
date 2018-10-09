@@ -1,0 +1,78 @@
+body {
+    background-color: #2a2a2a;
+}
+
+.mainColumn {
+	width: 850px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+header {
+    color: white;
+    font-family: sans-serif;
+}
+
+#headerContent {
+	background-color: #e73c40;
+}
+
+nav {
+    padding: 50px;
+    margin: -50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 0;
+}
+
+#navBackground {
+    background-color: white;
+    margin: 0 -60px;
+    position: relative;
+}
+
+.navBg {
+	height: 45px;
+    width: 10px;
+    position: absolute;
+}
+
+#navBgLeft {
+	margin-left: -60px;
+    background: url(../img/headerBgLeft.png) center center / 100%;
+}
+
+#navBgRight {
+	margin-left: 800px;
+    background: url(../img/headerBgRight.png) center center / 100%;
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    color: #e73c40;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 14px;
+    height: 35px;
+    border-right: 3px dashed #e3e3e3;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#logo {
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: -85px;
+}
+
+#headerTitle {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    width: 543px;
+    margin-bottom: -85px;
+}
