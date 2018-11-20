@@ -1,23 +1,84 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
-        <title>2plycode.com</title>
-        <style>
-            body {
-                background-color: #e73c40;
-            }
-            img {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin: -75px;
-                width: 150px;
-            }
-        </style>
-    </head>
-    <body>
-        <img src="new/img/logo.png">
-    </body>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>2plycode.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e73c40;
+        }
+
+        img {
+/*            position: absolute;*/
+/*            left: 50%;*/
+/*            top: 50%;*/
+/*            margin: -75px;*/
+            width: 150px;
+            align-content: center;
+        }
+
+        .flexboi {
+            display: grid;
+            grid-template-columns: 10% 30% 20% 30% 10%;
+            grid-template-rows: 50px auto;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .stuff {
+            padding-left: 50px;
+            padding-top: 25px;
+            grid-column-start: 2;
+            grid-column-end: span 3;
+            background-color: #222222;
+            color: rgba(255, 255, 255, 0.88);
+            grid-row-start: 2;
+        }
+        .center {
+            text-align: center;
+            list-style-position: inside;
+        }
+        .footr {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexboi">
+        <div class="stuff">
+            <p class="center">2plycode is a two-person software development team</p>
+            <p class="center">We work in a variety of programming languages, including</p>
+            <ul class="center">
+                <li>HTML/CSS/Javascript</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+            <br>
+            <img src="new/img/logo.png">
+            <br>
+            <br>
+            <h2>Projects</h2>
+            <p>Though we don't have any finished products available yet, they will be posted as completed!</p>
+            <br>
+            <br>
+            <h2>About</h2>
+            <br>
+            <h3>Scott Pilgrim</h3>
+            <p>CS Major at UNC Chapel Hill</p>
+            <br>
+            <h3>Tommy Wiseau</h3>
+            <p>CS Major at UNC Chapel Hill</p>
+            <br>
+        </div>
+        <div class="footr">
+            <p>(don't worry this website isn't permanent)</p>
+            
+        </div>
+    </div>
+</body>
 </html>
