@@ -1,84 +1,354 @@
 <!doctype html>
 <html>
     <head>
-    <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-    <title>2plycode.com</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-        body {
-            background-color: #e73c40;
-        }
-
-        img {
-/*            position: absolute;*/
-/*            left: 50%;*/
-/*            top: 50%;*/
-/*            margin: -75px;*/
-            width: 150px;
-            align-content: center;
-        }
-
-        .flexboi {
-            display: grid;
-            grid-template-columns: 10% 30% 20% 30% 10%;
-            grid-template-rows: 50px auto;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .stuff {
-            padding-left: 50px;
-            padding-top: 25px;
-            grid-column-start: 2;
-            grid-column-end: span 3;
-            background-color: #222222;
-            color: rgba(255, 255, 255, 0.88);
-            grid-row-start: 2;
-        }
-        .center {
-            text-align: center;
-            list-style-position: inside;
-        }
-        .footr {
-            grid-column-start: 1;
-            grid-column-end: 6;
-            grid-row-start: 3;
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="flexboi">
-        <div class="stuff">
-            <p class="center">2plycode is a two-person software development team</p>
-            <p class="center">We work in a variety of programming languages, including</p>
-            <ul class="center">
-                <li>HTML/CSS/Javascript</li>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
-            <br>
-            <img src="new/img/logo.png">
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+        <title>My Cubicle</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/mobile.css" media="screen and (max-width: 549px)" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    </head>
+    <body>
+        <section id="sidebar" class="">
+            <h1>SETTINGS</h1>
+            <hr>
+            <p><input type="checkbox" id="spin_check"> Disable 3D effect</p>
             <br>
             <br>
-            <h2>Projects</h2>
-            <p>Though we don't have any finished products available yet, they will be posted as completed!</p>
+            <h1>MADE WITH</h1>
+            <hr>
+            <p><a href="https://jquery.com/" target="_blank">JQuery</a></p>
             <br>
+            <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
             <br>
-            <h2>About</h2>
-            <br>
-            <h3>Scott Pilgrim</h3>
-            <p>CS Major at UNC Chapel Hill</p>
-            <br>
-            <h3>Tommy Wiseau</h3>
-            <p>CS Major at UNC Chapel Hill</p>
-            <br>
-        </div>
-        <div class="footr">
-            <p>(don't worry this website isn't permanent)</p>
-            
-        </div>
-    </div>
-</body>
+            <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+        </section>
+        <button id="settings" class="">
+            <div id="burger_1" class="burger"></div>
+            <div id="burger_2" class="burger"></div>
+            <div id="burger_3" class="burger"></div>
+        </button>
+        <nav>
+            <button data-number="1" class="nav_button" id="face_1">Home</button>
+            <button data-number="2" class="nav_button" id="face_2">Education</button>
+            <button data-number="4" class="nav_button" id="face_4">Work</button>
+            <button data-number="3" class="nav_button" id="face_3">Interests</button>
+            <button data-number="5" class="nav_button" id="face_5">Contact</button>
+            <button data-number="6" class="nav_button" id="face_6">',:)</button>
+        </nav>
+        <main>
+            <div id="cube_group" class="spin">
+                <div class="face active" id="cube_1">
+                    <div class="face_content">
+                        <div id="cover_img">
+                            <img src="img/cover.jpg" alt="cover image">
+                        </div>
+                        <img id="avatar" src="img/avatar.jpg" alt="profile image">
+                        <h1>WELCOME TO MY PERSONAL CUBE</h1>
+                        <hr>
+                        <p>My Name is Tom Nguyen and I am a Computer Science junior from Charlotte, North Carolina.
+                        </p>
+                        <br>
+                        <p>This is a personal website I made to showcase a little bit about myself.</p>
+                        <br>
+                        <p>Use the navigation above to flip through the site and find out more about me and what I do!</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="face" id="cube_2">
+                    <div class="face_content">
+                        <h1>MY EDUCATION <i class="fas fa-graduation-cap"></i></h1>
+                        <hr>
+                        <span id="schools_span" class="no_space">
+                            <figure>
+                                <img src="img/vas.png" alt="Vietnam Australia International School">
+                                <hr>
+                                <figcaption>Vietnam Australia Intl. School</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/ssis.png" alt="Vietnam Australia International School">
+                                <hr>
+                                <figcaption>Saigon South Intl. School</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/unc.png" alt="Vietnam Australia International School">
+                                <hr>
+                                <figcaption>Univ. of North Carolina at Chapel Hill</figcaption>
+                            </figure>
+                        </span>
+                        <div id="rack"></div>
+                        <div id="pinion"></div>
+                        <div id="schools_container">
+                            <div id="schools_long_container">
+                                <div class="schools_detail" id="vas">
+                                    <h1><a href="https://www.vas.edu.vn/en" target="_blank">Vietnam Australia International School</a></h1>
+                                    <small>Saigon, Vietnam</small>
+                                    <br>
+                                    <br>
+                                    <p>Established in 2004 and licensed by the Vietnamese Government, VAS is a private school group with the national education system offering both the K-12 Vietnamese National and the Cambridge International education programmes.</p>
+                                </div>
+                                <div class="schools_detail" id="ssis">
+                                    <h1><a href="https://www.ssis.edu.vn/" target="_blank">Saigon South International School</a></h1>
+                                    <small>Saigon, Vietnam</small>
+                                    <br>
+                                    <br>
+                                    <p>SSIS is a private international school offering an American standards based curriculum for grades EC-12. They offer both the IB diploma program and AP coursework, and is fully accredited by the Western Association of Schools and Colleges. The school is also member of East Asia Council of Overseas Schools, National Association of Independent Schools, and Mekong River International Schools Association (MRISA). SSIS was recently designated an Apple Distinguished School.</p>
+                                </div>
+                                <div class="schools_detail" id="unc">
+                                    <h1><a href="https://www.unc.edu/" target="_blank">The University of North Carolina at Chapel Hill</a></h1>
+                                    <small>
+                                    Chapel Hill, North Carolina
+                                    </small>
+                                    <br>
+                                    <br>
+                                    <p>UNC is a public research university located in Chapel Hill, North Carolina, United States. It is the flagship university of the University of North Carolina system. After being chartered in 1789, the university first began enrolling students in 1795, which also allows it to be one of three schools to claim the title of the oldest public university in the United States.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="face" id="cube_3">
+                    <div class="face_content">
+                        <h1>MY INTERESTS <i class="fas fa-heart"></i></h1>
+                        <hr>
+                        <div id="interests_wrap">
+                            <button id="arrange"></button>
+                            <span id="int_circle">
+                                <div class="interests_thumb" id="int_a">
+                                    <img src="img/goldfinch.jpg" alt="Goldfinch in the backyard">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>BIRDWATCHING</h1>
+                                        <small>Backyard goldfinch | Charlotte, North Carolina</small>
+                                        <br>
+                                        <br>
+                                        <p>One of my many favorite pastimes involve just sitting in our backyard with a camera in hand, watching the many birds that come through to the feeders that we have set up.</p>
+                                        <br>
+                                        <p>There is a certain calmness that comes with watching beautiful, vibrant birds playfully dashing back and forth that I love.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_b">
+                                    <img src="img/salad.jpg" alt="Salad at Panera Bread">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>FOOD</h1>
+                                        <small>Panera Bread salad | Charlotte, North Carolina</small>
+                                        <br>
+                                        <br>
+                                        <p>I just love eating. I am always down to eat, anytime, anywhere. I have two jobs solely to support my love for food.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_c">
+                                    <img src="img/pillow.jpg" alt="Handmade owl pillow">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>MAKING THINGS</h1>
+                                        <small>Handmade owl pillow | Chapel Hill, North Carolina</small>
+                                        <br>
+                                        <br>
+                                        <p>Whether it be sewing pillows, wood working, cross stitching, drawing, whatever... I really enjoy making them all.</p>
+                                        <br>
+                                        <p>Thanks to my job, I have access to a wide variety of sophisticated equipment such as laser cutters, 3D printers, and computerized embroidery machines.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_d">
+                                    <img src="img/sanrafael.jpg" alt="San Rafael Bridge">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>ROAD TRIPPING</h1>
+                                        <small>Richmond-San Rafael Bridge | San Francisco, California</small>
+                                        <br>
+                                        <br>
+                                        <p>Unlike most people, I really enjoy long drives. There's just something I find very calm and relaxing.</p>
+                                        <br>
+                                        <p>Road trips are a commonplace in my family. From our home in Charlotte, North Carolina, we have driven as far north as Toronto, Canada, and as far south as Miami, Florida. There is still so much left to see!</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_e">
+                                    <img src="img/diamondhead.jpg" alt="Diamond Head Crater">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>PHOTOGRAPHY</h1>
+                                        <small>Diamond Head Crater | Honolulu, Hawaii</small>
+                                        <br>
+                                        <br>
+                                        <p>In case you haven't noticed, all the pictures on this site are taken by me! I never travel anywhere without at least a smartphone with a decent camera. I just can't resist the urge to capture that Tumblr-worthy snap.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_f">
+                                    <img src="img/airplane.jpg" alt="Korean Air plane">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>TRAVELING</h1>
+                                        <small>Korean Air Boeing 777 | Seoul, South Korea</small>
+                                        <br>
+                                        <br>
+                                        <p>Since as long as I can remember, I have been flying all over the place. I love traveling, and I am so fortunate to be able to explore the world as often as I do.</p>
+                                        <br>
+                                        <p>There are few things I love more than the roaring sound of an airplane taking off.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_g">
+                                    <img src="img/doggos.jpg" alt="Hua Hua and Badger">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>DOGS!</h1>
+                                        <small>Hua Hua and Badger | Chapel Hill, North Carolina</small>
+                                        <br>
+                                        <br>
+                                        <p>Dogs are pretty great, what else is there to say.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_g">
+                                    <img src="img/Mercedes.jpg" alt="1989 Mercedes">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>CARS</h1>
+                                        <small>1989 Mercedes on Franklin St. | Chapel Hill, North Carolina</small>
+                                        <br>
+                                        <br>
+                                        <p>Although I am not very knowledgeable about the intricacies of cars, I really enjoy looking at them and going for the occasional drive in my parents' sports car.</p>
+                                    </div>
+                                </div>
+                                <div class="interests_thumb" id="int_g">
+                                    <img src="img/cat.jpg" alt="Cat lounging at Hanauma Bay">
+                                    <div class="int_content">
+                                        <button class="close_int"><i class="fas fa-times"></i></button>
+                                        <h1>CATS!</h1>
+                                        <small>Lounging cat at Hanauma Bay | Honolulu, Hawaii</small>
+                                        <br>
+                                        <br>
+                                        <p>As great as dogs are, I am definite a cat person.</p>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="face" id="cube_4">
+                    <div class="face_content">
+                        <h1>MY WORK EXPERIENCES <i class="fas fa-suitcase"></i></h1>
+                        <hr>
+                        <span class="no_space">
+                            <span id="jobs_span">
+                                <div id="job_1" class="jobs_container">
+                                    <img src="img/lasercut.gif" alt="Laser cutter animation">
+                                    <div class="jobs_content">
+                                        <img src="img/beam.png" alt="BeAM logo">
+                                        <hr>
+                                        <small>Student Program Assistant</small>
+                                        <br>
+                                        <a href="https://beam.unc.edu/" target="_blank"><button class="jobs_site">WEBSITE <i class="fas fa-arrow-alt-circle-right"></i></button></a>
+                                        <button class="jobs_button">
+                                            <span class="more">MORE <i class="fas fa-chevron-circle-down"></i></span>
+                                            <span class="less">CLOSE <i class="fas fa-times-circle"></i></span>
+                                        </button>
+                                        <hr>
+                                        <p>BeAM is a groundbreaking initiative to offer free training and access to cutting edge technology for all UNC students, staff and faculty.</p>
+                                        <br>
+                                        <p>BeAM Program Assistants train users (students, staff, and faculty from across campus) in best practices and safety for use of the makerspace equipment.</p>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div id="job_2" class="jobs_container">
+                                    <img src="img/resnet.gif" alt="ResNET meeting animation">
+                                    <div class="jobs_content">
+                                        <img src="img/resnet-logo.png" alt="ResNET logo">
+                                        <hr>
+                                        <small>Residential Computing Consultant</small>
+                                        <br>
+                                        <a href="https://its.unc.edu/resource/resnet/" target="_blank"><button class="jobs_site">WEBSITE <i class="fas fa-arrow-alt-circle-right"></i></button></a>
+                                        <button class="jobs_button">
+                                            <span class="more">MORE <i class="fas fa-chevron-circle-down"></i></span>
+                                            <span class="less">CLOSE <i class="fas fa-times-circle"></i></span></button>
+                                        <hr>
+                                        <p>ResNET employs 50 students across campus dedicated to providing reliable on-site IT support, education and delivering new technologies, to the UNC-Chapel Hill residential community.</p>
+                                        <br>    
+                                        <p>The ResNET staff is committed to enhancing the intellectual environment to support the University’s vision.</p>
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="face" id="cube_5">
+                    <div class="face_content">
+                        <h1>CONTACT ME <i class="fas fa-envelope"></i></h1>
+                        <hr>
+                        <div id="contact_wrap">
+                            <div id="lcd_back" class="lcd">
+                                8888888888
+                            </div>
+                            <div id="lcd_front" class="lcd">
+                                
+                            </div>
+                            <div class="contact_thumb" id="contact_1" data-pad="1">
+                                <p>1</p>
+                                <small></small>
+                            </div>
+                            <div class="contact_thumb" id="contact_2" data-pad="2">
+                                <p>2</p>
+                                <small>ABC</small>
+                            </div>
+                            <div class="contact_thumb contact_icon contact_open" id="contact_3" data-pad="email">
+                                <p><i class="fas fa-at"></i></p>
+                                <small>EML</small>
+                            </div>
+                            <a href="https://www.instagram.com/uni.tom/" target="_blank">
+                                <div class="contact_thumb contact_icon" id="contact_4" data-pad="instagram">
+                                    <p><i class="fab fa-instagram"></i></p>
+                                    <small>IGM</small>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/unitom2020" target="_blank">
+                                <div class="contact_thumb contact_icon" id="contact_5" data-pad="facebook">
+                                    <p><i class="fab fa-facebook-f"></i></p>
+                                    <small>FBK</small>
+                                </div>
+                            </a>
+                            <a href="https://github.com/tenart" target="_blank">
+                                <div class="contact_thumb contact_icon" id="contact_6" data-pad="github">
+                                    <p><i class="fab fa-github"></i></p>
+                                    <small>GIT</small>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/unitom/" target="_blank">
+                                <div class="contact_thumb contact_icon" id="contact_7" data-pad="linkedin">
+                                    <p><i class="fab fa-linkedin"></i></p>
+                                    <small>LINK</small>
+                                </div>
+                            </a>
+                            <div class="contact_thumb" id="contact_8" data-pad="8">
+                                <p>8</p>
+                                <small>TUV</small>
+                            </div>
+                            <div class="contact_thumb contact_icon contact_open" id="contact_9" data-pad="snapchat">
+                                <p><i class="fab fa-snapchat-ghost"></i></p>
+                                <small>SNAP</small>
+                            </div>
+                            <div class="contact_thumb" id="contact_0" data-pad="0">
+                                <p>0</p>
+                                <small>+</small>
+                            </div>
+                        </div>
+                        <div class="contact_window" id="email">
+                            <button class="close_int"><i class="fas fa-times"></i></button>
+                            <h1>tomn98@live.unc.edu</h1>
+                            <small>Email</small>
+                        </div>
+                        <div class="contact_window" id="snapchat">
+                            <button class="close_int"><i class="fas fa-times"></i></button>
+                            <img src="img/snapcodeBitmoji.svg">
+                            <small>Snapcode</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="face" id="cube_6"></div>
+            </div>
+        </main>
+    </body>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </html>
