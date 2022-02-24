@@ -5,7 +5,7 @@
 
 :root {
     --main-bg-color: #ffffff;
-    --main-color: #ec0f5d;
+    --main-theme: #ec0f5d;
     --main-yellow: #fbbf24;
     --main-green: #9fce1f;
     --main-blue: #58d1f7;
@@ -61,7 +61,7 @@
     background-color: #ffffff;
     border: 6px solid #000000;
     border-radius: 100%;
-    margin: -6px;
+    /* margin: -6px; */
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -92,19 +92,19 @@
     font-size: 8px;
 }
 
-.line-dot.line-1 {
+.line-1 {
     background-color: var(--main-yellow);
 }
 
-.line-dot.line-2 {
+.line-2 {
     background-color: var(--main-green);
 }
 
-.line-dot.line-3 {
+.line-3 {
     background-color: var(--main-blue);
 }
 
-.line-dot.line-4 {
+.line-4 {
     background-color: var(--main-purple);
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 a {
-    color: var(--main-color);
+    color: var(--main-theme);
     font-weight: bold;
 }
 
@@ -139,26 +139,28 @@ span {
     font-family: inherit;
 }
 
-header, main {
-    max-width: 1024px;
-    width: 100%;
-}
-
 /* HEADER STYLING */
 
 #main-header {
-    /* background: var(--main-bg-color); */
     padding-bottom: 0;
     z-index: 99;
     position: fixed;
+    width: 100%;
+    color: white;
 }
 
 #main-header 
 #header-top {
+    background-color: black;
     display: flex;
-    flex-direction: row;
-    background-color: var(--main-bg-color);
+    justify-content: center;
+}
+
+#main-header
+#header-top-content {
     padding: 32px 16px;
+    max-width: 1024px;
+    width: 100%;
 }
 
 #main-header  
@@ -181,17 +183,19 @@ header, main {
 
 #main-header 
 #header-gradient {
-    /* background: linear-gradient(to bottom, var(--main-bg-color), rgba(255, 255, 255, 0)); */
     height: 32px;
     width: calc(100% + 32px);
     margin: 0 -16px;
     z-index: 1;
     position: relative;
     background: transparent url("/img/header-gradient.png") left center / 32px 32px repeat-x;
+    /* filter: brightness(0);
+    -webkit-filter: brightness(0);
+    opacity: 0.25; */
 }
 
 #header-spacer {
-    height: 230px;
+    height: 210px;
 }
 
 /* NAV STYLING */
@@ -199,13 +203,21 @@ header, main {
 #main-nav {
     z-index: 2;
     position: relative;
-    background-color: var(--main-bg-color);
-    padding: 0 16px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.1);
 }
 
 #main-nav 
 #nav-text {
     justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 16px;
 }
 
 #main-nav  
@@ -213,12 +225,10 @@ header, main {
     /* background-color: red; */
     font-weight: bold;
     margin-right: 8px;
-}
-
-#main-nav 
-.station:hover {
-    cursor: pointer;
-    color: #ec0f5d;
+    line-height: 1;
+    border-top: 2px solid white;
+    padding-top: 6px;
+    /* margin-top: -6px; */
 }
 
 #main-nav 
@@ -227,21 +237,29 @@ header, main {
 }
 
 #main-nav 
-.station h1 {
+.station-name {
+    align-items: baseline;
+}
+
+#main-nav 
+.station-name
+h1 {
     font-size: 20px;
     line-height: 1;
 }
 
 #main-nav 
-.station-dot {
-    margin-top: 8px;
-    /* display: none; */
+.station-name
+p {
+    line-height: 1;
+    font-size: 10px;
+    margin-left: 4px;
+    text-transform: uppercase;
 }
 
 #main-nav 
 .train-dots {
-    /* background-color: yellow; */
-    margin-left: -2px;
+    margin-top: 6px;
 }
 
 #main-nav 
@@ -255,15 +273,21 @@ header, main {
 }
 
 #main-nav 
-#nav-line {
-    height: 12px;
-    width: calc(100% + 256px);
-    margin-left: -128px;
-    margin-top: -12px;
-    background: url("/img/line-end-left.png") left center / 128px 24px no-repeat,
-                url("/img/line-end-right.png") right center / 128px 24px no-repeat;
-    background-color: var(--main-color);
-    /* display: none; */
+.station:hover,
+#main-nav 
+.station:active {
+    cursor: pointer;
+    color: var(--main-theme);
+    border-color: var(--main-theme);
+}
+
+#main-nav 
+.station:hover
+.line-dot,
+#main-nav 
+.station:active
+.line-dot {
+    background-color: var(--main-theme);
 }
 
 /* BODY CONTENT STYLING */
@@ -271,6 +295,8 @@ header, main {
 #main-content {
     /* background: rgba(255, 0, 0, 0.05); */
     padding: 0 16px;
+    max-width: 1024px;
+    width: 100%;
 }
 
 #main-content 
@@ -279,7 +305,7 @@ header, main {
     height: calc(100vh * 2);
     position: fixed;
     margin-top: -256px;
-    background-color: var(--main-color);
+    background-color: var(--main-theme);
     z-index: -1;
 }
 
@@ -289,10 +315,45 @@ header, main {
     padding-left: 44px;
 }
 
+/* SECTION LEFT STYLING */
+
 .main-section 
-.section-header {
-    margin-left: -44px;
+.section-left-line {
+    /* background-color: rgba(255, 255, 0, 0.5); */
+    width: 44px;
+    margin-right: 16px;
+    margin-left: -60px;
+    flex-shrink: 0;
 }
+
+.main-section
+.section-left-line
+.station-dot {
+    margin-top: 12px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.main-section
+.section-left-line
+.line-branch {
+    height: 64px;
+    width: 28px;
+    margin-left: 16px;
+    margin-top: -12px;
+    mask-image: url("/img/line-branch-mask.svg");
+    -webkit-mask-image: url("/img/line-branch-mask.svg");
+}
+
+.main-section
+.section-left-line
+.left-branch-line {
+    flex-grow: 1;
+    width: 12px;
+    margin-left: 32px;
+}
+
+/* SECTION RIGHT STYLING (CONTENT) */
 
 .main-section 
 .section-header 
@@ -312,10 +373,8 @@ h1 {
 .main-section 
 .section-header 
 .section-trains {
-    /* background-color: yellow; */
     align-items: center;
     height: 48px;
-    /* margin-bottom: 12px 0; */
 }
 
 .main-section 
@@ -390,8 +449,8 @@ h1 {
 .station-sign
 hr {
     border: 0;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.25);
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
     margin: 8px -10px;
     /* margin: 0; */
 }
@@ -400,8 +459,8 @@ hr {
 .station-sign
 hr:first-of-type {
     margin-top: -10px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.75);
+    /* background-color: rgba(255, 255, 255, 0.75); */
+    background-color: white;
 }
 
 .main-section
@@ -433,7 +492,7 @@ li
     /* SMALL HEADER STYLING */
 
     #main-header 
-    #header-top {
+    #header-top-content {
         padding: 16px;
     }
 
@@ -449,26 +508,32 @@ li
     }
 
     #header-spacer {
-        height: 168px;
+        height: 158px;
     }
 
     /* SMALL NAV STYLING */
 
+    #main-nav {
+        padding-bottom: 8px;
+    }
+
     #main-nav 
-    .station 
+    .station-name {
+        flex-direction: column;
+    }
+
+    #main-nav 
+    .station-name 
     h1 {
         font-size: 16px;
     }
 
     #main-nav  
-    .station 
+    .station-name 
     p {
-        font-size: 12px;
-    }
-
-    #main-nav 
-    .train-dots {
+        margin-top: 2px;
         margin-left: 0;
+        text-transform: none;
     }
 
     #main-nav 
@@ -494,10 +559,8 @@ li
     .main-section 
     .section-header 
     .section-trains {
-        /* background-color: yellow; */
         align-items: flex-start;
         height: 36px;
-        /* margin-bottom: 12px 0; */
     }
 
     .main-section 

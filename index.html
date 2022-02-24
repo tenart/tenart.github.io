@@ -26,18 +26,20 @@
     </head>
 
     <body class="flex-col">
-        <header class="flex-col" id="main-header">
+        <header id="main-header">
             <!-- MAIN HEADER TOP -->
-            <div id="header-top" class="text-zero flex-row">
-                <div>
-                    <img id="logo-img" alt="Tom Nguyen logo" src="/img/logo.png"/>
-                </div>
-                <div class="flex-grow"></div>
-                <div id="header-intro" class="flex-row">
-                    <img id="profile-img" alt="Tom Nguyen profile picture" src="/img/profile.jpg">
-                    <div class="text-initial hide-when-small">
-                        <h1><b>Hi, I'm Tom! This is my portfolio.</b></h1>
-                        <p class="subtitle">I'm an artist, developer, and maker.</p>
+            <div id="header-top" class="text-zero">
+                <div id="header-top-content" class="flex-row">
+                    <div>
+                        <img id="logo-img" alt="Tom Nguyen logo" src="/img/logo.png"/>
+                    </div>
+                    <div class="flex-grow"></div>
+                    <div id="header-intro" class="flex-row">
+                        <img id="profile-img" alt="Tom Nguyen profile picture" src="/img/profile.jpg">
+                        <div class="text-initial hide-when-small">
+                            <h1><b>Hi, I'm Tom! This is my portfolio.</b></h1>
+                            <p class="subtitle">I'm an artist, developer, and maker.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,47 +47,50 @@
             <nav id="main-nav">
                 <div id="nav-text" class="flex-row">
                     <div class="station">
-                        <h1>Projects</h1>
-                        <p>Center</p>
+                        <div class="station-name flex-row">
+                            <h1>Projects</h1>
+                            <p>Center</p>
+                        </div>
                         <div class="train-dots flex-row">
                             <div class="line-1 line-dot small-letter">UI</div>
                             <div class="line-1 line-dot">M</div>
                             <div class="line-1 line-dot">X</div>
                             <div class="line-1 line-dot">O</div>
                         </div>
-                        <div class="station-dot"></div>
                     </div>
                     <div class="station">
-                        <h1>Experience</h1>
-                        <p>Square</p>
+                        <div class="station-name flex-row">
+                            <h1>Experience</h1>
+                            <p>Square</p>
+                        </div>
                         <div class="train-dots flex-row">
                             <div class="line-2 line-dot">W</div>
                             <div class="line-2 line-dot">I</div>
                             <div class="line-2 line-dot">V</div>
                         </div>
-                        <div class="station-dot"></div>
                     </div>
                     <div class="station">
-                        <h1>Education</h1>
-                        <p>Avenue</p>
+                        <div class="station-name flex-row">
+                            <h1>Education</h1>
+                            <p>Avenue</p>
+                        </div>
                         <div class="train-dots flex-row">
                             <div class="line-3 line-dot small-letter">HS</div>
-                            <div class="line-3 line-dot">U</div>
+                            <div class="line-3 line-dot small-letter">BA</div>
                         </div>
-                        <div class="station-dot"></div>
                     </div>
                     <div class="station">
-                        <h1>Contact</h1>
-                        <p>Plaza</p>
+                        <div class="station-name flex-row">
+                            <h1>Contact</h1>
+                            <p>Plaza</p>
+                        </div>
                         <div class="train-dots flex-row">
                             <div class="line-4 line-dot">E</div>
                             <div class="line-4 line-dot">P</div>
                             <div class="line-4 line-dot small-letter">GH</div>
                         </div>
-                        <div class="station-dot"></div>
                     </div>
                 </div>
-                <div id="nav-line"></div>
             </nav>
             <div id="header-gradient"></div>
         </header>
@@ -96,52 +101,58 @@
             </div>
             <!-- MAIN CONTENT COLUMN -->
             <div>
-                <section class="main-section">
-                    <div class="section-header flex-row">
+                <section class="main-section flex-row">
+                    <div class="section-left-line flex-col">
                         <div class="station-dot"></div>
-                        <div class="section-name flex-row">
-                            <h1>Projects Center</h1>
-                            <div class="section-trains flex-row">
-                                <div class="circle-arrow"></div>
-                                <div class="line-1 line-dot small-letter">UI</div>
-                                <div class="line-1 line-dot">M</div>
-                                <div class="line-1 line-dot">X</div>
-                                <div class="line-1 line-dot">O</div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="station-sign-group flex-row">
-                        <div class="station-sign about-sign">
-                            <hr/>
-                            <h1>At Projects Ctr Station</h1>
-                            <hr/>
-                            <p>Explore various projects I've worked on over the years including digital design and physical products. Select a project for more details.</p>
-                        </div>
-                        <div class="station-sign trains-sign">
-                            <hr/>
-                            <h1>With Connections To</h1>
-                            <hr/>
-                            <ul>
-                                <li>
+                        <div class="line-branch line-1"></div>
+                        <div class="left-branch-line line-1"></div>
+                    </div>
+                    <div class="section-right-content">
+                        <div class="section-header flex-row">
+                            <div class="section-name flex-row">
+                                <h1>Projects Center</h1>
+                                <div class="section-trains flex-row">
+                                    <div class="circle-arrow"></div>
                                     <div class="line-1 line-dot small-letter">UI</div>
-                                    <p>UI Design & Web Development<p>
-                                </li>
-                                <li>
                                     <div class="line-1 line-dot">M</div>
-                                    <p>Mobile-Oriented Development<p>
-                                </li>
-                                <li>
                                     <div class="line-1 line-dot">X</div>
-                                    <p>Experimental Projects<p>
-                                </li>
-                                <li>
                                     <div class="line-1 line-dot">O</div>
-                                    <p>Other Personal Projects<p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>   
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate modi quis recusandae, mollitia doloribus, nobis ipsam natus perspiciatis harum tempora quos sequi quibusdam molestiae temporibus voluptates aspernatur beatae iure nesciunt?</p>         
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="station-sign-group flex-row">
+                            <div class="station-sign about-sign">
+                                <hr/>
+                                <h1>At Projects Ctr Station</h1>
+                                <hr/>
+                                <p>Explore various projects I've worked on over the years including digital design and physical products. Select a project for more details.</p>
+                            </div>
+                            <div class="station-sign trains-sign">
+                                <hr/>
+                                <h1>With Connections To</h1>
+                                <hr/>
+                                <ul>
+                                    <li>
+                                        <div class="line-1 line-dot small-letter">UI</div>
+                                        <p>UI Design & Web Development<p>
+                                    </li>
+                                    <li>
+                                        <div class="line-1 line-dot">M</div>
+                                        <p>Mobile-Oriented Development<p>
+                                    </li>
+                                    <li>
+                                        <div class="line-1 line-dot">X</div>
+                                        <p>Experimental Projects<p>
+                                    </li>
+                                    <li>
+                                        <div class="line-1 line-dot">O</div>
+                                        <p>Other Work & Personal Projects<p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>   
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate modi quis recusandae, mollitia doloribus, nobis ipsam natus perspiciatis harum tempora quos sequi quibusdam molestiae temporibus voluptates aspernatur beatae iure nesciunt?</p>
+                    </div>         
                 </section>
             </div>
         </main>
