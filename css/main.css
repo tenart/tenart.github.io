@@ -374,6 +374,11 @@ p {
     flex-grow: 1;
     width: 12px;
     margin-left: 32px;
+    background-image: url("/img/footer-gradient.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+
 }
 
 /* SECTION RIGHT STYLING (CONTENT) */
@@ -512,7 +517,6 @@ hr {
 .project-tile {
     overflow: hidden;
     width: calc(20% - var(--tile-spacing));
-    background-color: red;
     font-size: 0;
     margin-right: var(--tile-spacing);
     margin-top: var(--tile-spacing);

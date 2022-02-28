@@ -6,7 +6,8 @@
             "year": 2016,
             "tech": ["HTML", "CSS", "JS", "jQuery"],
             "tags": ["interactive", "modern", "widget"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Arithmetic Artillery",
@@ -14,7 +15,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js"],
             "tags": ["3d", "educational", "game", "interactive", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Script UNC",
@@ -22,7 +24,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "howler.js", "Ace", "Font Awesome"],
             "tags": ["2d", "educational", "game", "interactive", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Mimic",
@@ -30,7 +33,8 @@
             "year": 2018,
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "html2canvas"],
             "tags": ["funny", "interactive", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "2048 W98",
@@ -38,7 +42,8 @@
             "year": 2020,
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "solitaireVictory.js"],
             "tags": ["funny", "game", "interactive", "retro"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Network Simulator",
@@ -46,7 +51,8 @@
             "year": 2021,
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI"],
             "tags": ["educational", "interactive", "modern", "research"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Rank UI",
@@ -54,7 +60,8 @@
             "year": 2021,
             "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "Next.js", "React Icons", "React Country Flag"],
             "tags": ["dashboard", "interactive", "modern", "research", "responsive"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Dashboard UI",
@@ -62,7 +69,8 @@
             "year": 2021,
             "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "React Icons"],
             "tags": ["dashboard", "modern", "responsive"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         }
     ],
     "mobile_web_dev": [
@@ -72,7 +80,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Web Speech API"],
             "tags": ["educational", "interactive", "mobile", "modern", "webkit native"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Parcel Delivery",
@@ -80,7 +89,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Font Awesome", "Google Maps API"],
             "tags": ["mobile", "modern", "webkit native"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Laser Queue",
@@ -88,7 +98,8 @@
             "year": 2018,
             "tech": ["HTML", "CSS", "JS", "jQuery", "Font Awesome"],
             "tags": ["interactive", "mobile", "modern", "tablet kiosk"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         }
     ],
     "experimental_dev": [
@@ -98,7 +109,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
             "tags": ["3d", "experimental"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Room 3D",
@@ -106,7 +118,8 @@
             "year": 2017,
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
             "tags": ["3d", "experimental"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Keyboard Tanks",
@@ -114,7 +127,8 @@
             "year": 2019,
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js", "Keypress.js", "SketchUp"],
             "tags": ["3d", "experimental", "interactive", "game", "interactive"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Web Pod",
@@ -122,7 +136,8 @@
             "year": 2020,
             "tech": ["HTML", "CSS", "JS", "jQuery", "howler.js", "Hammer.js"],
             "tags": ["experimental", "mobile", "retro"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         }
     ],
     "other": [
@@ -132,7 +147,17 @@
             "year": 2014,
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "apparel", "graphic design", "illustration"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "App Contest 1",
+            "p_id": "app-contest-1",
+            "year": 2015,
+            "tech": ["MIT App Inventor"],
+            "tags": ["interactive", "mobile", "modern"],
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "HOSA Shirt",
@@ -140,7 +165,8 @@
             "year": 2015,
             "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
             "tags": ["2d", "3d", "apparel", "graphic design", "illustration"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "POB Filter",
@@ -148,7 +174,17 @@
             "year": 2015,
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "graphic design", "illustration"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "App Contest 2",
+            "p_id": "app-contest-2",
+            "year": 2016,
+            "tech": ["MIT App Inventor"],
+            "tags": ["interactive", "mobile", "modern"],
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Old Well Filter",
@@ -156,7 +192,8 @@
             "year": 2016,
             "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
             "tags": ["2d", "3d", "graphic design", "illustration", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Craige Filter",
@@ -164,7 +201,8 @@
             "year": 2016,
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "graphic design", "illustration", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Bell Tower Isometric",
@@ -172,7 +210,17 @@
             "year": 2017,
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "illustration"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "Bird Pendant",
+            "p_id": "bird-pendant",
+            "year": 2017,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["laser cut"],
+            "imgs": [],
+            "desc": ""
         },
         {
             "name": "Makeathon Logo",
@@ -180,7 +228,44 @@
             "year": 2018,
             "tech": ["Adobe Illustrator"],
             "tags": ["2d", "graphic design", "modern"],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "Perpetual Calendar",
+            "p_id": "perpetual-calendar",
+            "year": 2018,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["laser cut", "woodworking"],
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "Ladder Shelf",
+            "p_id": "ladder-shelf",
+            "year": 2019,
+            "tech": ["SketchUp"],
+            "tags": ["3d", "modern", "woodworking"],
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "Bedroom Bench",
+            "p_id": "bedroom-bench",
+            "year": 2019,
+            "tech": ["SketchUp"],
+            "tags": ["3d", "modern", "woodworking"],
+            "imgs": [],
+            "desc": ""
+        },
+        {
+            "name": "Feature Wall",
+            "p_id": "feature-wall",
+            "year": 2019,
+            "tech": ["SketchUp"],
+            "tags": ["3d", "modern", "woodworking"],
+            "imgs": [],
+            "desc": ""
         }
     ],
     "defaults": [
@@ -190,7 +275,8 @@
             "year": 0,
             "tech": [""],
             "tags": [""],
-            "imgs": 0
+            "imgs": [],
+            "desc": ""
         },
         {
             "tech_all": [
@@ -217,7 +303,8 @@
                 "Hammer.js",
                 "Adobe Photoshop",
                 "Adobe Illustrator",
-                "SketchUp"
+                "SketchUp",
+                "MIT App Inventor"
             ],
             "tags_all": [
                 "2d",
@@ -231,6 +318,7 @@
                 "graphic design",
                 "illustration",
                 "interactive",
+                "laser cut",
                 "mobile",
                 "modern",
                 "research",
@@ -238,7 +326,8 @@
                 "retro",
                 "tablet kiosk",
                 "webkit native",
-                "widget"
+                "widget",
+                "woodworking"
             ]
         }
     ]
