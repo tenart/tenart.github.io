@@ -136,7 +136,7 @@
 /* BASIC STYLING */
 
 html, body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -170,6 +170,7 @@ span {
     padding-bottom: 0;
     z-index: 99;
     position: fixed;
+    top: 0;
     width: 100%;
     color: white;
 }
@@ -217,10 +218,6 @@ span {
     /* filter: brightness(0);
     -webkit-filter: brightness(0);
     opacity: 0.25; */
-}
-
-#header-spacer {
-    height: 210px;
 }
 
 /* NAV STYLING */
@@ -322,6 +319,7 @@ p {
     padding: 0 16px;
     max-width: var(--max-width);
     width: 100%;
+    margin-top: 210px;
 }
 
 #main-content 
@@ -595,10 +593,6 @@ hr {
         margin-right: 0;
     }
 
-    #header-spacer {
-        height: 158px;
-    }
-
     /* SMALL NAV STYLING */
 
     #main-nav {
@@ -634,6 +628,12 @@ hr {
     #main-nav  
     .line-dot.small-letter {
         font-size: 6px;
+    }
+
+    /* SMALL BODY */
+
+    #main-content {
+        margin-top: 158px;
     }
 
     /* SMALL SECTION STYLING */

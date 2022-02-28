@@ -1,0 +1,245 @@
+{
+    "general_web_dev": [
+        {
+            "name": "Timeline Widget",
+            "p_id": "timeline-widget",
+            "year": 2016,
+            "tech": ["HTML", "CSS", "JS", "jQuery"],
+            "tags": ["interactive", "modern", "widget"],
+            "imgs": 0
+        },
+        {
+            "name": "Arithmetic Artillery",
+            "p_id": "arithmetic-artillery",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js"],
+            "tags": ["3d", "educational", "game", "interactive", "modern"],
+            "imgs": 0
+        },
+        {
+            "name": "Script UNC",
+            "p_id": "script-unc",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "howler.js", "Ace", "Font Awesome"],
+            "tags": ["2d", "educational", "game", "interactive", "modern"],
+            "imgs": 0
+        },
+        {
+            "name": "Mimic",
+            "p_id": "mimic",
+            "year": 2018,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "html2canvas"],
+            "tags": ["funny", "interactive", "modern"],
+            "imgs": 0
+        },
+        {
+            "name": "2048 W98",
+            "p_id": "2048-w98",
+            "year": 2020,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "solitaireVictory.js"],
+            "tags": ["funny", "game", "interactive", "retro"],
+            "imgs": 0
+        },
+        {
+            "name": "Network Simulator",
+            "p_id": "network-simulator",
+            "year": 2021,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI"],
+            "tags": ["educational", "interactive", "modern", "research"],
+            "imgs": 0
+        },
+        {
+            "name": "Rank UI",
+            "p_id": "rank-ui",
+            "year": 2021,
+            "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "Next.js", "React Icons", "React Country Flag"],
+            "tags": ["dashboard", "interactive", "modern", "research", "responsive"],
+            "imgs": 0
+        },
+        {
+            "name": "Dashboard UI",
+            "p_id": "dashboard-ui",
+            "year": 2021,
+            "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "React Icons"],
+            "tags": ["dashboard", "modern", "responsive"],
+            "imgs": 0
+        }
+    ],
+    "mobile_web_dev": [
+        {
+            "name": "Citizenship Guide",
+            "p_id": "citizenship-guide",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Web Speech API"],
+            "tags": ["educational", "interactive", "mobile", "modern", "webkit native"],
+            "imgs": 0
+        },
+        {
+            "name": "Parcel Delivery",
+            "p_id": "parcel-delivery",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Font Awesome", "Google Maps API"],
+            "tags": ["mobile", "modern", "webkit native"],
+            "imgs": 0
+        },
+        {
+            "name": "Laser Queue",
+            "p_id": "laser-queue",
+            "year": 2018,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "Font Awesome"],
+            "tags": ["interactive", "mobile", "modern", "tablet kiosk"],
+            "imgs": 0
+        }
+    ],
+    "experimental_dev": [
+        {
+            "name": "Nixie 3D",
+            "p_id": "nixie-3d",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
+            "tags": ["3d", "experimental"],
+            "imgs": 0
+        },
+        {
+            "name": "Room 3D",
+            "p_id": "room-3d",
+            "year": 2017,
+            "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
+            "tags": ["3d", "experimental"],
+            "imgs": 0
+        },
+        {
+            "name": "Keyboard Tanks",
+            "p_id": "keyboard-tanks",
+            "year": 2019,
+            "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js", "Keypress.js", "SketchUp"],
+            "tags": ["3d", "experimental", "interactive", "game", "interactive"],
+            "imgs": 0
+        },
+        {
+            "name": "Web Pod",
+            "p_id": "web-pod",
+            "year": 2020,
+            "tech": ["HTML", "CSS", "JS", "jQuery", "howler.js", "Hammer.js"],
+            "tags": ["experimental", "mobile", "retro"],
+            "imgs": 0
+        }
+    ],
+    "other": [
+        {
+            "name": "ACT Shirt",
+            "p_id": "act-shirt",
+            "year": 2014,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["2d", "apparel", "graphic design", "illustration"],
+            "imgs": 0
+        },
+        {
+            "name": "HOSA Shirt",
+            "p_id": "hosa-shirt",
+            "year": 2015,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
+            "tags": ["2d", "3d", "apparel", "graphic design", "illustration"],
+            "imgs": 0
+        },
+        {
+            "name": "POB Filter",
+            "p_id": "pob-filter",
+            "year": 2015,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["2d", "graphic design", "illustration"],
+            "imgs": 0
+        },
+        {
+            "name": "Old Well Filter",
+            "p_id": "old-well-filter",
+            "year": 2016,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
+            "tags": ["2d", "3d", "graphic design", "illustration", "modern"],
+            "imgs": 0
+        },
+        {
+            "name": "Craige Filter",
+            "p_id": "craige-filter",
+            "year": 2016,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["2d", "graphic design", "illustration", "modern"],
+            "imgs": 0
+        },
+        {
+            "name": "Bell Tower Isometric",
+            "p_id": "bell-tower-isometric",
+            "year": 2017,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["2d", "illustration"],
+            "imgs": 0
+        },
+        {
+            "name": "Makeathon Logo",
+            "p_id": "makeathon-logo",
+            "year": 2018,
+            "tech": ["Adobe Illustrator"],
+            "tags": ["2d", "graphic design", "modern"],
+            "imgs": 0
+        }
+    ],
+    "defaults": [
+        {
+            "name": "",
+            "p_id": "",
+            "year": 0,
+            "tech": [""],
+            "tags": [""],
+            "imgs": 0
+        },
+        {
+            "tech_all": [
+                "HTML", 
+                "CSS", 
+                "CSS 3D", 
+                "Tailwind CSS", 
+                "JS", 
+                "jQuery", 
+                "jQuery UI", 
+                "React", 
+                "Next.js",
+                "React Icons",
+                "React Country Flag",
+                "NW.js",
+                "howler.js",
+                "Ace",
+                "html2canvas",
+                "solitaireVictory.js",
+                "Font Awesome",
+                "Web Speech API",
+                "Google Maps API",
+                "Keypress.js",
+                "Hammer.js",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "SketchUp"
+            ],
+            "tags_all": [
+                "2d",
+                "3d",
+                "apparel",
+                "dashboard",
+                "educational",
+                "experimental",
+                "funny",
+                "game",
+                "graphic design",
+                "illustration",
+                "interactive",
+                "mobile",
+                "modern",
+                "research",
+                "responsive",
+                "retro",
+                "tablet kiosk",
+                "webkit native",
+                "widget"
+            ]
+        }
+    ]
+}
