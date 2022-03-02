@@ -8,6 +8,7 @@
         <title>Tom's Portfolio</title>
         <meta name="description" content="Tom Nguyen's Design Portfolio.">
         <meta name="author" content="Tom Nguyen">
+        <meta name="theme-color" content="#000000">
 
         <meta property="og:title" content="Tom's Portfolio">
         <meta property="og:type" content="website">
@@ -265,37 +266,49 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="sub-section-title flex-row">
-                            <div class="sub-section-dot"></div>
-                            <div>
-                                <h2>Work Experience</h2>
-                                <p>Previous roles and skills.</p>
+                        <button data-target="work" class="sub-section-toggle sub-section-title">
+                            <div class="flex-row">
+                                <div class="sub-section-dot"></div>
+                                <div class="flex-grow">
+                                    <h2>Work Experience</h2>
+                                    <p>Previous roles and skills.</p>
+                                </div>
+                                <div class="sub-section-arrow"></div>
                             </div>
-                        </div>
+                            <p id="work-notice" class="hidden-notice subtitle">Items hidden</p>
+                        </button>
                         <div id="work-experiences" class="experience-container">
                             <!-- WORK EXPERIENCES GO HERE -->
                             <!-- WORK EXPERIENCES GO HERE -->
                             <!-- WORK EXPERIENCES GO HERE -->
                         </div>
-                        <div class="sub-section-title flex-row">
-                            <div class="sub-section-dot"></div>
-                            <div>
-                                <h2>Internship Experience</h2>
-                                <p>Previous internships and specialty.</p>
+                        <button data-target="internship" class="sub-section-toggle sub-section-title">
+                            <div class="flex-row">
+                                <div class="sub-section-dot"></div>
+                                <div class="flex-grow">
+                                    <h2>Internship Experience</h2>
+                                    <p>Previous internships and specialty.</p>
+                                </div>
+                                <div class="sub-section-arrow"></div>
                             </div>
-                        </div>
+                            <p id="internship-notice" class="hidden-notice subtitle">Items hidden</p>
+                        </button>
                         <div id="internship-experiences" class="experience-container">
                             <!-- INTERNSHIP EXPERIENCES GO HERE -->
                             <!-- INTERNSHIP EXPERIENCES GO HERE -->
                             <!-- INTERNSHIP EXPERIENCES GO HERE -->
                         </div>
-                        <div class="sub-section-title flex-row">
-                            <div class="sub-section-dot"></div>
-                            <div>
-                                <h2>Volunteer Experience</h2>
-                                <p>Always happy to help.</p>
+                        <button data-target="volunteer" class="sub-section-toggle sub-section-title">
+                            <div class="flex-row">
+                                <div class="sub-section-dot"></div>
+                                <div class="flex-grow">
+                                    <h2>Volunteer Experience</h2>
+                                    <p>Always happy to help.</p>
+                                </div>
+                                <div class="sub-section-arrow"></div>
                             </div>
-                        </div>
+                            <p id="volunteer-notice" class="hidden-notice subtitle">Items hidden</p>
+                        </button>
                         <div id="volunteer-experiences" class="experience-container">
                             <!-- VOLUNTEER EXPERIENCES GO HERE -->
                             <!-- VOLUNTEER EXPERIENCES GO HERE -->
@@ -304,7 +317,6 @@
                     </div>      
                 </section>
                 <!-- EDUCATION SECTION -->
-                <!-- PROJECTS SECTION -->
                 <section class="main-section flex-row">
                     <!-- SECTION LEFT LINE -->
                     <div class="section-left-line flex-col">

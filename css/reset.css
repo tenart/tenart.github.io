@@ -58,4 +58,7 @@ button {
     color: inherit;
     padding: 0;
     margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
 }

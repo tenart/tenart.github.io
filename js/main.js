@@ -1,16 +1,26 @@
 // GLOBAL VARIABLES
-// PROJECTS
+// STICKY HEADER IDs
+const ID_MAIN_HEADER = "#main-header";
+const ID_HEADER_TOP = "#header-top";
+const ID_MAIN_CONTENT = "#main-content";
+// PROJECTS URLs & IDs
 const URL_PROJECTS_JSON = "/js/projects.json";
 const URL_PROJECT_THUMBNAILS = "/img/project-thumbnails";
 const ID_GENERAL_CONTAINER = "#general-projects";
 const ID_MOBILE_CONTAINER = "#mobile-projects";
 const ID_EXPERIMENTAL_CONTAINER = "#experimental-projects";
 const ID_OTHER_CONTAINER = "#other-projects";
-// EXPERIENCE
+// EXPERIENCE URLs & IDs
 const URL_EXPERIENCES_JSON = "/js/experiences.json";
 const ID_WORK_CONTAINER = "#work-experiences";
+const ID_WORK_NOTICE = "#work-notice";
 const ID_INTERNSHIP_CONTAINER = "#internship-experiences";
+const ID_INTERNSHIP_NOTICE = "#internship-notice";
 const ID_VOLUNTEER_CONTAINER = "#volunteer-experiences";
+const ID_VOLUNTEER_NOTICE = "#volunteer-notice";
+const CLASS_SUB_SECTION_TOGGLE = ".sub-section-toggle";
+const CLASS_HIDDEN_NOTICE = ".hidden-notice";
+const CLASS_SUB_SECTION_ARROW = ".sub-section-arrow";
 
 // Read projects.json from URL, start appending on callback
 const getProjects = (url) => {
@@ -18,7 +28,6 @@ const getProjects = (url) => {
         appendProjects(json);
     })
 }
-
 // Read experiences.json from URL, start appending on callback
 const getExperiences = (url) => {
     $.getJSON(url, (json) => {
@@ -48,14 +57,13 @@ const appendProjects = (json) => {
     });
     
 }
-
 // Appends experience entries to page
 const appendExperiences = (json) => {
-    // Extract project categories
+    // Extract experience entries categories
     const workExperiences = json.work;
     const internshipExperiences = json.internships;
     const volunteerExperiences = json.volunteering;
-    // Append projects by category
+    // Append experience entries by category
     workExperiences.forEach((experience) => {
         $(ID_WORK_CONTAINER).append(createExperienceEntryHTML(experience));
     });
@@ -65,6 +73,10 @@ const appendExperiences = (json) => {
     volunteerExperiences.forEach((experience) => {
         $(ID_VOLUNTEER_CONTAINER).append(createExperienceEntryHTML(experience));
     });
+    // Update entry count in hidden notices;
+    $(ID_WORK_NOTICE).text(`${workExperiences.length} ${workExperiences.length === 1 ? "item" : "items"} hidden`);
+    $(ID_INTERNSHIP_NOTICE).text(`${internshipExperiences.length} ${internshipExperiences.length === 1 ? "item" : "items"} hidden`);
+    $(ID_VOLUNTEER_NOTICE).text(`${volunteerExperiences.length} ${volunteerExperiences.length === 1 ? "item" : "items"} hidden`);
     
 }
 
@@ -89,7 +101,6 @@ const createProjectTileHTML = (project) => {
     `);
     return $tileHTML;
 }
-
 // Generate HTML for experience entry from JSON data
 const createExperienceEntryHTML = (experience) => {
     const title = experience.title;
@@ -99,7 +110,7 @@ const createExperienceEntryHTML = (experience) => {
     const location = experience.location;
     const description = experience.description;
     const url = experience.url;
-
+    // Create and return HTML
     const $entryHTML = $(`
         <div class="experience-entry flex-row">
             <div>
@@ -146,11 +157,42 @@ const createExperienceEntryHTML = (experience) => {
     return $entryHTML;
 }
 
+// Stick header to top if window scrolled by a certain distance
+const stickHeader = () => {   
+    // Get scroll distance and header top height
+    const scrollDistance = window.scrollY;
+    const headerTopHeight = $(ID_HEADER_TOP).height();
+    // If scrolling past header top then stick nav bar
+    if(scrollDistance < headerTopHeight) {
+        $(ID_MAIN_HEADER).css("margin-top", 0);
+    } else {
+        $(ID_MAIN_HEADER).css("margin-top", -1 * headerTopHeight);
+    } 
+}
+
+// subsection toggle handler
+const toggleSubSection = (event) => {
+    const $parentWrapper = $(event.target).closest(CLASS_SUB_SECTION_TOGGLE);
+    const $hiddenNotice = $parentWrapper.find(CLASS_HIDDEN_NOTICE);
+    const $subSectionArrow = $parentWrapper.find(CLASS_SUB_SECTION_ARROW);
+    const toggleTarget = $parentWrapper.attr("data-target");
+    const targetID = `#${toggleTarget}-experiences`;
+    $(targetID).slideToggle(200);
+    $hiddenNotice.toggle();
+    $subSectionArrow.toggleClass("arrow-up");
+}
+
 // ON PAGE READY
 $(function() {
-    // Read projects from JSON and render tiles
+    // INIT
+    // Read projects and work experiences from JSON and render HTML
     getProjects(URL_PROJECTS_JSON);
-    // Read experiences from JSON and render entries
     getExperiences(URL_EXPERIENCES_JSON);
-
+    
+    // LISTENERS
+    // Set sticky header behavior on scroll & window resize
+    $(window).on("scroll", stickHeader);
+    $(window).on("resize", stickHeader);
+    // Toggle subsection on click
+    $(CLASS_SUB_SECTION_TOGGLE).on("click", (event) => { toggleSubSection(event) });
 });

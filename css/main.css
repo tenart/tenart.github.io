@@ -4,6 +4,7 @@
 /* SHARED STYLING */
 
 :root {
+    --breakpoint: 690px;
     --max-width: 800px;
     --tile-spacing: 1px;
 
@@ -182,6 +183,12 @@ span {
     top: 0;
     width: 100%;
     color: white;
+    transition: margin-top 0.2s;
+    -webkit-transition: margin-top 0.2s;
+    -moz-transition: margin-top 0.2s;
+    -ms-transition: margin-top 0.2s;
+    -o-transition: margin-top 0.2s;
+    /* background-color: red; */
 }
 
 #main-header 
@@ -221,9 +228,11 @@ span {
     height: 32px;
     width: calc(100% + 32px);
     margin: 0 -16px;
+    margin-bottom: -32px;
     z-index: 1;
     position: relative;
     background: transparent url("/img/header-gradient.png") left center / 32px 32px repeat-x;
+    pointer-events: none;
     /* filter: brightness(0);
     -webkit-filter: brightness(0);
     opacity: 0.25; */
@@ -336,7 +345,7 @@ p {
     width: 12px;
     height: calc(100vh * 1.5);
     position: fixed;
-    margin-top: -64px;
+    margin-top: -150px;
     background-color: var(--main-theme);
     z-index: -1;
 }
@@ -508,6 +517,7 @@ li
     margin-top: 9px;
     margin-left: -28px;
     margin-right: 16px;
+    z-index: 1;
 }
 
 /* PROJECTS SECTION STYLING */
@@ -521,7 +531,7 @@ li
 
 .tiles-container:last-of-type {
     /* background-color: yellow; */
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .project-tile {
@@ -583,13 +593,40 @@ li
 
 /* EXPERIENCE SECTION STYLING */
 
+.sub-section-toggle {
+    width: 100%;
+    cursor: pointer;
+}
+
+.sub-section-arrow {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-style: normal;
+    background-color: black;
+    mask: url("/img/arrow-down.svg") center center / 30px 30px;
+    -webkit-mask: url("/img/arrow-down.svg") center center / 30px 30px;
+}
+
+.sub-section-arrow.arrow-up {
+    mask: url("/img/arrow-up.svg") center center / 30px 30px;
+    -webkit-mask: url("/img/arrow-up.svg") center center / 30px 30px;
+}
+
+.hidden-notice {
+    margin-top: 16px;
+    padding-left: 24px;
+    background: transparent url("/img/ri-eye-closed.svg") left center / 16px 16px no-repeat;
+}
+
 .experience-container {
     /* background-color: yellow; */
     margin-bottom: 16px;
+    display: none;
 }
 
 .experience-container:last-of-type {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .experience-entry {
@@ -634,6 +671,16 @@ img {
 img {
     /* background-color: yellow; */
     margin: 4px;
+}
+
+.sub-section-toggle:hover
+.sub-section-arrow {
+    background-color: var(--main-theme);
+}
+
+.sub-section-toggle:hover
+h2 {
+    color: var(--main-theme);
 }
 
 
