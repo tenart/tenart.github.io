@@ -499,7 +499,7 @@ li
 .main-section
 .sub-section-title {
     /* background-color: yellow; */
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .main-section
@@ -765,6 +765,7 @@ img {
     }
 
     /* SMALL PROJECTS STYLING */
+
     .project-tile {
         width: calc(100% / 3 - var(--tile-spacing));
         background-color: red;
