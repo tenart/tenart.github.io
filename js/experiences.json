@@ -1,0 +1,98 @@
+{
+    "work": [
+        {
+            "title": "Assistant Art Instructor",
+            "employer": "Charlotte Arts & Science Council (ASC)",
+            "from": 2014,
+            "to": 2016,
+            "location": "Charlotte, NC",
+            "description": "Assistant instructors in providing free multimedia arts education to high school students as part of ASC's <a target='_blank' href='https://www.artsplus.org/programs/studio-345'>STUDIO 345</a> afterschool community youth program.",
+            "url": "https://artsandscience.org/"
+        },
+        {
+            "title": "Makerspace Program Assistant",
+            "employer": "UNC-CH Applied Physical Sciences (APS)",
+            "from": 2017,
+            "to": 2019,
+            "location": "Chapel Hill, NC",
+            "description": "Provided training to patrons and ensured a safe operating environment at APL makerspaces across campus as part of the <a target='_blank' href='https://beam.unc.edu/'>Be A Maker Program (BeAM)</a>. Experience with customer service, customer/employee training, woodworking, digital design, and digital fabrication.",
+            "url": "https://aps.unc.edu/"
+        },
+        {
+            "title": "Residential Computing Consultant",
+            "employer": "UNC-CH Information Technology Services (ITS)",
+            "from": 2017,
+            "to": 2018,
+            "location": "Chapel Hill, NC",
+            "description": "Provided on-campus residents with one-on-one IT support and maintained networking equipment throughout the residential communities through the <a target='_blank' href='https://its.unc.edu/resource/resnet/'>ResNET program</a>.",
+            "url": "https://its.unc.edu/"
+        },
+        {
+            "title": "Senior Residential Computing Consultant",
+            "employer": "UNC-CH Information Technology Services (ITS)",
+            "from": 2018,
+            "to": 2019,
+            "location": "Chapel Hill, NC",
+            "description": "Managed and led a regional group of ResNET student consultants.",
+            "url": "https://its.unc.edu/"
+        }
+    ],
+    "internships": [
+        {
+            "title": "Web Developer Intern",
+            "employer": "UNC-CH Kenan Flager Business School",
+            "from": 2019,
+            "to": 2019,
+            "location": "Chapel Hill, NC",
+            "description": "Maintained websites for the school's various <a target='_blank' href='https://eship.unc.edu/'>Entrepreneurship Center</a> projects. Responsibilities included injecting custom code and uniform styling across WordPress, Squarespace, and Wix sites.",
+            "url": "https://www.kenan-flagler.unc.edu/"
+        },
+        {
+            "title": "Undergraduate Research Assistant",
+            "employer": "UNC-CH Department of Computer Science",
+            "from": 2021,
+            "to": 2021,
+            "location": "Chapel Hill, NC",
+            "description": "Assisted in developing a world-wide university ranking system, along with implementing an experimental video streaming protocol researched here at UNC. With focus in front-end development and RESTful API design.",
+            "url": "https://cs.unc.edu/"
+        }
+    ],
+    "volunteering": [
+        {
+            "title": "Event Volunteer",
+            "employer": "The Sandbox Charlotte",
+            "from": 2013,
+            "to": 2013,
+            "location": "Charlotte, NC",
+            "description": "Volunteered at <a target='_blank' href='https://gotsandbox.org/sandevents/'>An Evening of Believing</a>, a prom night for children battling cancer and other serious conditions.",
+            "url": "https://gotsandbox.org/"
+        },
+        {
+            "title": "Event Volunteer",
+            "employer": "Kids Health Links (KHL) & Health Occupation Students of America (HOSA)",
+            "from": 2014,
+            "to": 2016,
+            "location": "Charlotte, NC",
+            "description": "Volunteered at KHL events providing medical care to children of low-income families free of charge. Also volunteered at various <a target='_blank' href='http://nchosa.org/'>HOSA</a>-sponsored blood drives.",
+            "url": "https://www.kidshealthlinks.org/home"
+        },
+        {
+            "title": "Volunteer Committee Member",
+            "employer": "UNC-CH Carolina For The Kids (CFTK)",
+            "from": 2016,
+            "to": 2016,
+            "location": "Chapel Hill, NC",
+            "description": "Provided assistance at various CFTK events such as fundraisers, and maintained the organization's website as a member of the technology committee.",
+            "url": "http://www.carolinaftk.org/"
+        },
+        {
+            "title": "Technology Volunteer",
+            "employer": "Kramden Institute",
+            "from": 2017,
+            "to": 2019,
+            "location": "Durham, NC",
+            "description": "Volunteered as part of <a target='_blank' href='https://its.unc.edu/resource/resnet/'>ResNET</a> to collect, sort, refurbish, and rebuild computers for families with limited access to technology at home.",
+            "url": "https://kramden.org/"
+        }
+    ]
+}
