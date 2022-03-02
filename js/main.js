@@ -75,7 +75,7 @@ const createProjectTileHTML = (project) => {
     const year = project.year;
     // Create and return HTML
     const $tileHTML = $(`
-        <div class="project-tile" id="${id}">
+        <button class="project-tile" id="${id}">
             <img alt="${name}" src="${URL_PROJECT_THUMBNAILS}/${id}.jpg"/>
             <div class="flex-col">
                 <p class="proj-name flex-grow flex-col">
@@ -85,7 +85,7 @@ const createProjectTileHTML = (project) => {
                     ${year}
                 </p>
             </div>
-        </div>
+        </button>
     `);
     return $tileHTML;
 }
