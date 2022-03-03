@@ -140,6 +140,19 @@
     background-color: var(--main-purple);
 }
 
+.info-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-row
+img {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
 /* BASIC STYLING */
 
 html, body {
@@ -343,9 +356,9 @@ p {
 #main-content 
 #main-left-line {
     width: 12px;
-    height: calc(100vh * 1.5);
+    height: calc(100vh);
     position: fixed;
-    margin-top: -150px;
+    margin-top: -128px;
     background-color: var(--main-theme);
     z-index: -1;
 }
@@ -615,6 +628,7 @@ li
 
 .hidden-notice {
     margin-top: 16px;
+    /* margin-bottom: 16px; */
     padding-left: 24px;
     background: transparent url("/img/ri-eye-closed.svg") left center / 16px 16px no-repeat;
 }
@@ -658,15 +672,6 @@ h3 {
 }
 
 .experience-entry
-.info-row
-img {
-    height: 16px;
-    width: 16px;
-    margin-right: 8px;
-    margin-top: 4px;
-}
-
-.experience-entry
 .year-row
 img {
     /* background-color: yellow; */
@@ -683,6 +688,36 @@ h2 {
     color: var(--main-theme);
 }
 
+/* EDUCATION SECTION STYLING */
+
+.education-box {
+    margin-bottom: 16px;
+    /* margin-top: -16px; */
+}
+
+.education-box
+.education-img {
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.education-img
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* FOOTER STYLING */
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 32px 0;
+}
 
 /* RESPONSIVE */
 
@@ -817,8 +852,6 @@ h2 {
         width: calc(100% / 3 - var(--tile-spacing));
         background-color: red;
     }
-
-    /* SMALL EXPERIENCE STYLING */
 
 }
 
