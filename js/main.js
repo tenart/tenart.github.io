@@ -21,6 +21,8 @@ const ID_VOLUNTEER_NOTICE = "#volunteer-notice";
 const CLASS_SUB_SECTION_TOGGLE = ".sub-section-toggle";
 const CLASS_HIDDEN_NOTICE = ".hidden-notice";
 const CLASS_SUB_SECTION_ARROW = ".sub-section-arrow";
+// SCROLL BUTTONS
+const CLASS_SCROLL_TO = ".scroll-to";
 
 // Read projects.json from URL, start appending on callback
 const getProjects = (url) => {
@@ -87,7 +89,7 @@ const createProjectTileHTML = (project) => {
     const year = project.year;
     // Create and return HTML
     const $tileHTML = $(`
-        <button class="project-tile" id="${id}">
+        <button class="project-tile" id="${id}" title="learn more about ${name}">
             <img alt="${name}" src="${URL_PROJECT_THUMBNAILS}/${id}.jpg"/>
             <div class="flex-col">
                 <p class="proj-name flex-grow flex-col">
@@ -182,17 +184,30 @@ const toggleSubSection = (event) => {
     $subSectionArrow.toggleClass("arrow-up");
 }
 
+// Find target element and scroll to it 
+const scrollToTarget = (event) => {
+    const $parentWrapper = $(event.target).closest(CLASS_SCROLL_TO);
+    const targetName = $parentWrapper.attr("data-target");
+    const $scrollTarget = document.getElementById(`scroll-target-${targetName}`);
+    console.log($scrollTarget);
+    $scrollTarget.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
 // ON PAGE READY
 $(function() {
     // INIT
     // Read projects and work experiences from JSON and render HTML
     getProjects(URL_PROJECTS_JSON);
     getExperiences(URL_EXPERIENCES_JSON);
-    
+
     // LISTENERS
     // Set sticky header behavior on scroll & window resize
     $(window).on("scroll", stickHeader);
     $(window).on("resize", stickHeader);
     // Toggle subsection on click
     $(CLASS_SUB_SECTION_TOGGLE).on("click", (event) => { toggleSubSection(event) });
+    // Scroll to target on click
+    $(CLASS_SCROLL_TO).on("click", (event) => { scrollToTarget(event) });
 });

@@ -153,6 +153,11 @@ img {
     margin-top: 4px;
 }
 
+.scroll-target-offset {
+    margin-top: -128px;
+    margin-bottom: 128px;
+}
+
 /* BASIC STYLING */
 
 html, body {
@@ -356,11 +361,10 @@ p {
 #main-content 
 #main-left-line {
     width: 12px;
-    height: calc(100vh);
-    position: fixed;
-    margin-top: -128px;
+    flex-shrink: 0;
     background-color: var(--main-theme);
-    z-index: -1;
+    margin-top: -160px;
+    margin-right: -12px;
 }
 
 /* SECTION STYLING */
@@ -593,9 +597,10 @@ li
 }
 
 .project-tile:hover > div {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: var(--main-theme);
-    box-shadow: inset 0 0 0 2px var(--main-theme);
+    background-color: rgba(236, 15, 92, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    /* color: var(--main-theme); */
+    /* box-shadow: inset 0 0 0 2px var(--main-theme); */
 }
 
 .project-tile:hover 
@@ -693,12 +698,13 @@ h2 {
 .education-box {
     margin-bottom: 16px;
     /* margin-top: -16px; */
+    /* background-color: yellow; */
 }
 
 .education-box
 .education-img {
-    height: 40px;
-    width: 40px;
+    height: 64px;
+    width: 64px;
     margin-top: 4px;
     margin-right: 8px;
 }
@@ -711,12 +717,81 @@ img {
 
 /* FOOTER STYLING */
 
-footer {
+#main-footer {
     background-color: black;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-content {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 16px;
     color: white;
-    text-align: center;
-    padding: 32px 0;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    font-size: 0;
+}
+
+#footer-content > div > .flex-row {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#footer-content
+.line-dot {
+    height: 12px;
+    width: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+}
+
+#footer-content
+.line-dot + .line-dot {
+    margin-right: 16px;
+}
+
+#footer-content
+p {
+    line-height: 1px;
+    font-size: 12px;
+}
+
+#footer-content
+.subtitle {
+    line-height: 1px;
+    font-size: 10px;
+}
+
+#scroll-top {
+    height: 48px;
+    width: 48px;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    bottom: 32px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+#scroll-top:hover {
+    background-color: var(--main-theme);
+}
+
+#scroll-top
+div {
+    mask: url("/img/stairs-up.svg") center center / 100% 100% no-repeat;
+    -webkit-mask: url("/img/stairs-up.svg") center center / 100% 100% no-repeat;
+    background-color: white;
+    height: 32px;
+    width: 32px;
 }
 
 /* RESPONSIVE */
