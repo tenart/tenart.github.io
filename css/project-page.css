@@ -1,0 +1,182 @@
+@import url("/css/standard.css");
+
+/* PROJECT PAGE STYLING */
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.space-bottom {
+    margin-bottom: 16px;
+}
+
+#header, #content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-width {
+    max-width: var(--max-width);
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 66px;
+    position: fixed;
+    top: 0;
+}
+
+.header-button {
+    height: 100%;
+    border-top: 2px solid white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header-button
+.circle-arrow {
+    background-color: white;
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.header-button:hover {
+    color: var(--main-theme);
+    border-color: var(--main-theme);
+}
+
+.header-button:hover
+.circle-arrow {
+    background-color: var(--main-theme);
+}
+
+#header-gradient {
+    height: 32px;
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+    margin-bottom: -32px;
+    z-index: 1;
+    position: relative;
+    background: transparent url("/img/header-gradient.png") left center / 32px 32px repeat-x;
+    pointer-events: none;
+}
+
+#content {
+    margin-top: 66px;
+    /* background-color: rgba(255, 255, 0, 0.5); */
+    padding-top: 32px;
+}
+
+#project-thumb {
+    height: 60px;
+    width: 60px;
+    margin-right: 16px;
+}
+
+#project-thumb-outline {
+    height: 60px;
+    width: 60px;
+    margin-top: -60px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    pointer-events: none;
+}
+
+#project-main-url {
+    /* display: inline-block; */
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#project-main-url
+.circle-arrow {
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+}
+
+#project-main-url:hover
+.circle-arrow {
+    background-color: var(--main-theme);
+}
+
+.tags-container {
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 4px; */
+}
+
+.tags-container
+.tag {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* color: white; */
+    padding: 0px 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+
+
+/* RESPONSIVE */
+
+/* SMALL */
+@media only screen and (max-width: 690px) {
+    .hide-when-small {
+        display: none;
+    }
+
+    #header {
+        height: 62px;
+    }
+
+    .header-button {
+        font-size: 16px;
+    }
+
+    .header-button
+    .circle-arrow {
+        height: 16px;
+        width: 16px;
+    }
+
+    #content {
+        margin-top: 62px;
+    }
+}
+
+/* BIG */
+@media only screen and (min-width: 691px) {
+    .hide-when-big {
+        display: none;
+    }
+
+}

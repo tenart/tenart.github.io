@@ -7,7 +7,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery"],
             "tags": ["interactive", "modern", "widget"],
             "imgs": [],
-            "desc": ""
+            "desc": "A timeline widget for embedding into a WordPress site. Created for the Carolina For The Kids Foundation to showcase the organization's history.",
+            "url": "http://www.carolinaftk.org/history.html"
         },
         {
             "name": "Arithmetic Artillery",
@@ -16,7 +17,10 @@
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js"],
             "tags": ["3d", "educational", "game", "interactive", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "A 2-player game where players take turn solving each other's mathematic equations to figure out how far the enemy's ship will travel. Solving the equation allows the player to lead their shot more accurately.",
+            "note": "Online play functionality no longer works due to changes to Google Firebase architecture. Only for visual demonstration.",
+            "url": "https://tenart.github.io/arithmetic_artillery/"
+
         },
         {
             "name": "Script UNC",
@@ -25,7 +29,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "howler.js", "Ace", "Font Awesome"],
             "tags": ["2d", "educational", "game", "interactive", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "A 2D top-down game that aims to teach the player basic principles of programming. The player moves the onscreen character by entering JavaScript functions and parameters into the provided editor.",
+            "url": "https://tenart.github.io/ScriptUNC/"
         },
         {
             "name": "Mimic",
@@ -34,7 +39,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "html2canvas"],
             "tags": ["funny", "interactive", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "A tool for mimicking iOS's iMessage user interface. Great for falsifying records and general tomfoolery.",
+            "url": "https://tenart.github.io/mimic/"
         },
         {
             "name": "2048 W98",
@@ -43,7 +49,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI", "solitaireVictory.js"],
             "tags": ["funny", "game", "interactive", "retro"],
             "imgs": [],
-            "desc": ""
+            "desc": "A recreation of the popular game 2048 in the style of Windows 98. Experience pixel-perfect nostalgia.",
+            "url": "https://tenart.github.io/2048/"
         },
         {
             "name": "Network Simulator",
@@ -52,7 +59,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "jQuery UI"],
             "tags": ["educational", "interactive", "modern", "research"],
             "imgs": [],
-            "desc": ""
+            "desc": "A visualization of various network schemes. Created as part of a research project at UNC-CH.",
+            "url": "https://tenart.github.io/netsim_viewer/"
         },
         {
             "name": "Rank UI",
@@ -61,7 +69,8 @@
             "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "Next.js", "React Icons", "React Country Flag"],
             "tags": ["dashboard", "interactive", "modern", "research", "responsive"],
             "imgs": [],
-            "desc": ""
+            "desc": "A user interface concept for ranking universities and other institutions worldwide. Created as part of a research project at UNC-CH.",
+            "url": "https://rank-frontend.vercel.app/"
         },
         {
             "name": "Dashboard UI",
@@ -70,7 +79,8 @@
             "tech": ["HTML", "CSS", "Tailwind CSS", "JS", "React", "React Icons"],
             "tags": ["dashboard", "modern", "responsive"],
             "imgs": [],
-            "desc": ""
+            "desc": "A user interface concept for lab technicians. Created as part of a research project at UNC-CH.",
+            "url": "https://tenart.github.io/prototype-ui-comp523/"
         }
     ],
     "mobile_web_dev": [
@@ -81,7 +91,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Web Speech API"],
             "tags": ["educational", "interactive", "mobile", "modern", "webkit native"],
             "imgs": [],
-            "desc": ""
+            "desc": "A WebKit native app designed for my Vietnamese mom to study for her US citizenship exam. Uses the Web Speech API to verbalize text questions in both English and Vietnamese. Happy to say this app did its job.",
+            "url": "https://tenart.github.io/CitizenApp/"
         },
         {
             "name": "Parcel Delivery",
@@ -90,7 +101,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "NW.js", "Font Awesome", "Google Maps API"],
             "tags": ["mobile", "modern", "webkit native"],
             "imgs": [],
-            "desc": ""
+            "desc": "A user interface concept designed for a ride-share parcel delivery app. Created for a friend.",
+            "url": "https://tenart.github.io/buckaroo/"
         },
         {
             "name": "Laser Queue",
@@ -99,7 +111,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "Font Awesome"],
             "tags": ["interactive", "mobile", "modern", "tablet kiosk"],
             "imgs": [],
-            "desc": ""
+            "desc": "A digital queuing interface designed to be used as an iPad kiosk at BeAM makerspaces.",
+            "url": "https://tenart.github.io/laser-queue/queue.html"
         }
     ],
     "experimental_dev": [
@@ -110,7 +123,8 @@
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
             "tags": ["3d", "experimental"],
             "imgs": [],
-            "desc": ""
+            "desc": "Nixie tube clock screensaver. An experiment with CSS 3D on the web.",
+            "url": "https://tenart.github.io/Nixie3D/"
         },
         {
             "name": "Room 3D",
@@ -119,7 +133,8 @@
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "SketchUp"],
             "tags": ["3d", "experimental"],
             "imgs": [],
-            "desc": ""
+            "desc": "Creepy room with texture and animation. An experiment with CSS 3D on the web.",
+            "url": "https://tenart.github.io/Room3D/"
         },
         {
             "name": "Keyboard Tanks",
@@ -128,7 +143,8 @@
             "tech": ["HTML", "CSS", "CSS 3D", "JS", "jQuery", "howler.js", "Keypress.js", "SketchUp"],
             "tags": ["3d", "experimental", "interactive", "game", "interactive"],
             "imgs": [],
-            "desc": ""
+            "desc": "Like QWOP but with tanks. Use the keys WSED and IKOL to control the tracks of the tanks. Use QR and UP to rotate their turrets. Simultaneously press turret keys to fire. An experiment with CSS 3D in the web.",
+            "url": "https://tenart.github.io/keyboard-tanks/"
         },
         {
             "name": "Web Pod",
@@ -137,7 +153,8 @@
             "tech": ["HTML", "CSS", "JS", "jQuery", "howler.js", "Hammer.js"],
             "tags": ["experimental", "mobile", "retro"],
             "imgs": [],
-            "desc": ""
+            "desc": "An attempt to recreate the classic iPod's clickwheel using Hammer.js. Works best on a smartphone.",
+            "url": "https://tenart.github.io/iPod/"
         }
     ],
     "other": [
@@ -148,7 +165,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "apparel", "graphic design", "illustration"],
             "imgs": [],
-            "desc": ""
+            "desc": "Shirt design for the ACT Cohort club at Phillip O. Berry Academy of Technology."
         },
         {
             "name": "App Contest 1",
@@ -157,7 +174,7 @@
             "tech": ["MIT App Inventor"],
             "tags": ["interactive", "mobile", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "MIT App Inventor project created as part of the Lenovo Scholar Network app challenge. Uses the CloudDB module to allow users to send virtual tokens to one another. Project was voted fan-favorite."
         },
         {
             "name": "HOSA Shirt",
@@ -166,7 +183,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
             "tags": ["2d", "3d", "apparel", "graphic design", "illustration"],
             "imgs": [],
-            "desc": ""
+            "desc": "Shirt design for the HOSA club at Phillip O. Berry Academy of Technology."
         },
         {
             "name": "POB Filter",
@@ -175,7 +192,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "graphic design", "illustration"],
             "imgs": [],
-            "desc": ""
+            "desc": "Snapchat filter for Phillip O. Berry Academy of Technology."
         },
         {
             "name": "App Contest 2",
@@ -184,7 +201,7 @@
             "tech": ["MIT App Inventor"],
             "tags": ["interactive", "mobile", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "MIT App Inventor project created as part of the Lenovo Scholar Network app challenge. Uses the SMS and GPS modules to track and periodically notify others of the user's location in case of an emergency. Project was voted fan-favorite."
         },
         {
             "name": "Old Well Filter",
@@ -193,7 +210,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp"],
             "tags": ["2d", "3d", "graphic design", "illustration", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "Snapchat filter for the Old Well at UNC-CH."
         },
         {
             "name": "Craige Filter",
@@ -202,7 +219,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "graphic design", "illustration", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "Snapchat filter for the Craige Residence Hall at UNC-CH."
         },
         {
             "name": "Bell Tower Isometric",
@@ -211,7 +228,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["2d", "illustration"],
             "imgs": [],
-            "desc": ""
+            "desc": "Isometric digital illustration of the Bell Tower at UNC-CH."
         },
         {
             "name": "Bird Pendant",
@@ -220,7 +237,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["laser cut"],
             "imgs": [],
-            "desc": ""
+            "desc": "Laser cut key chain featuring a painted carolina chickadee."
         },
         {
             "name": "Makeathon Logo",
@@ -229,7 +246,7 @@
             "tech": ["Adobe Illustrator"],
             "tags": ["2d", "graphic design", "modern"],
             "imgs": [],
-            "desc": ""
+            "desc": "Logo designed for the Makeathon event at UNC-CH. Event hosted by the Kenan Flagler Business School."
         },
         {
             "name": "Perpetual Calendar",
@@ -238,7 +255,7 @@
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
             "tags": ["laser cut", "woodworking"],
             "imgs": [],
-            "desc": ""
+            "desc": "A flipping calendar concept that perpetually counts up as the casing is rotated."
         },
         {
             "name": "Ladder Shelf",
@@ -247,7 +264,7 @@
             "tech": ["SketchUp"],
             "tags": ["3d", "modern", "woodworking"],
             "imgs": [],
-            "desc": ""
+            "desc": "A shelf in the style of a ladder. Project designed and planned in SketchUp."
         },
         {
             "name": "Bedroom Bench",
@@ -256,7 +273,7 @@
             "tech": ["SketchUp"],
             "tags": ["3d", "modern", "woodworking"],
             "imgs": [],
-            "desc": ""
+            "desc": "A barn-style bedroom bench. Project designed and planned in SketchUp."
         },
         {
             "name": "Feature Wall",
@@ -265,7 +282,7 @@
             "tech": ["SketchUp"],
             "tags": ["3d", "modern", "woodworking"],
             "imgs": [],
-            "desc": ""
+            "desc": "The feature wall in my bedroom. Project designed and planned in SketchUp."
         }
     ],
     "defaults": [

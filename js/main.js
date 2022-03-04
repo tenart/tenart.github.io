@@ -87,9 +87,10 @@ const createProjectTileHTML = (project) => {
     const name = project.name;
     const id = project.p_id;
     const year = project.year;
+    const pageURL = `/project/?name=${id}`;
     // Create and return HTML
     const $tileHTML = $(`
-        <button class="project-tile" id="${id}" title="learn more about ${name}">
+        <button onclick="location.href='${pageURL}'" class="project-tile" id="${id}" title="learn more about ${name}">
             <img alt="${name}" src="${URL_PROJECT_THUMBNAILS}/${id}.jpg"/>
             <div class="flex-col">
                 <p class="proj-name flex-grow flex-col">

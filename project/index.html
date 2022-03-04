@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Tom's Portfolio</title>
+        <meta name="description" content="Tom Nguyen's Design Portfolio.">
+        <meta name="author" content="Tom Nguyen">
+        <meta name="theme-color" content="#000000">
+
+        <meta property="og:title" content="Tom's Portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tenart.github.io/">
+        <meta property="og:description" content="Tom Nguyen's design portfolio and featured projects.">
+        <meta property="og:image" content="/img/website-preview.png">
+
+        <!-- <link rel="icon" href="/favicon.ico"> -->
+        <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+        <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/project-page.css">
+
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="header-content" class="content-width">
+                <div class="content-width flex-row">
+                    <button class="header-button" id="go-back" onclick="history.back()">
+                        <div class="circle-arrow"></div>
+                        <p>Go Back</p>
+                    </button>
+                    <div class="flex-grow"></div>
+                    <button class="header-button" onclick="goToHome()">
+                        <!-- <div class="circle-arrow"></div> -->
+                        <p>Home</p>
+                    </button>
+                </div>
+                <div id="header-gradient"></div>
+            </div>
+        </header>
+        <main id="content">
+            <div class="content-width">
+                <div id="project-intro" class="flex-row space-bottom">
+                    <div class="text-zero">
+                        <img id="project-thumb">
+                        <div id="project-thumb-outline"></div>
+                    </div>
+                    <div>
+                        <h1 id="project-name">Loading...</h1>
+                        <p id="project-year" class="subtitle">Loading...</p>
+                    </div>
+                </div>
+                <h2>Description</h2>
+                <p id="project-description" class="space-bottom">Loading...</p>
+                <a id="project-main-url" class="space-bottom flex-row" target="_blank">
+                    <p>Check This Project Out</p>
+                    <div class="circle-arrow"></div>
+                </a>
+                <p id="no-link-message" class="space-bottom subtitle">This project is not available online. Photo gallery will be added soon!</p>
+                <h2>Tools & Technologies Used</h2>
+                <div id="tech-container" class="tags-container space-bottom">
+                    <div class="tag">Loading...</div>
+                </div>
+                <h2>Project Tags</h2>
+                <div id="tags-container" class="tags-container space-bottom">
+                    <div class="tag">Loading...</div>
+                </div>
+                <!-- <p class="space-bottom subtitle">Photo gallery will be added soon!.</p> -->
+            </div>
+        </main>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/projectPage.js"></script>
+</html>
