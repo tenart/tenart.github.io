@@ -540,6 +540,49 @@ img {
     width: 100%;
 }
 
+/* EXTRAS */
+
+.sub-section-extra {
+    margin-left: -28px;
+    padding-left: 28px;
+    background: transparent url("/img/diag-pattern.png") left top / 12px 12px repeat-y;
+    margin-bottom: 16px;
+    /* background-color: yellow; */
+    display: block;
+}
+
+.extra-entry {
+    /* background-color: yellow; */
+    padding: 8px;
+    /* margin-top: -8px; */
+    margin-left: -8px;
+}
+
+.extra-entry:hover {
+    color: var(--main-theme);
+    cursor: pointer;
+}
+
+.extra-entry:hover .extra-doc-icon {
+    background-color: var(--main-theme);
+    color: white;
+}
+
+.extra-doc-icon {
+    background-color: white;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    height: 48px;
+    width: 37px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.25);
+}
+
 /* FOOTER STYLING */
 
 #main-footer {
