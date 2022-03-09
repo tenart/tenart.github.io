@@ -163,9 +163,19 @@
             "p_id": "act-shirt",
             "year": 2014,
             "tech": ["Adobe Photoshop", "Adobe Illustrator"],
-            "tags": ["2d", "apparel", "graphic design", "illustration"],
+            "tags": ["2d", "graphic design", "illustration"],
             "imgs": [],
             "desc": "Shirt design for the ACT Cohort club at Phillip O. Berry Academy of Technology."
+        },
+        {
+            "name": "Spiral Bound Key Art",
+            "p_id": "spiral-bound-key-art",
+            "year": 2014,
+            "tech": ["Adobe Photoshop", "Adobe Illustrator"],
+            "tags": ["2d", "apparel", "graphic design", "illustration"],
+            "imgs": [],
+            "desc": "Key art design for Spiral Bound (2014), a documentary about a group of young education activists seeking social justice in the public school system through the arts.",
+            "url": "https://www.imdb.com/title/tt4025080/?ref_=ttpl_pl_tt"
         },
         {
             "name": "App Contest 1",
